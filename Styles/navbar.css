@@ -79,9 +79,6 @@
     .nav-seller {
         display: flex;
         align-items: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
 
     .nav-seller-img {
@@ -92,9 +89,6 @@
     .nav-cart {
         display: flex;
         align-items: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
 
     .nav-cart-img {
@@ -105,9 +99,6 @@
     .nav-profile {
         display: flex;
         align-items: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
 
     .nav-profile-img {
@@ -182,9 +173,6 @@
     .nav-seller {
         display: flex;
         align-items: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
 
     .nav-seller-img {
@@ -195,9 +183,6 @@
     .nav-cart {
         display: flex;
         align-items: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
 
     .nav-cart-img {
@@ -208,9 +193,6 @@
     .nav-profile {
         display: flex;
         align-items: center;
-        background-color: transparent;
-        border: none;
-        cursor: pointer;
     }
 
     .nav-profile-img {

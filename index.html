@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Assets/icon/favicon.jpeg">
+    <link rel="icon" href="./Assets/Logo/favicon.jpeg">
     <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="stylesheet" href="./Styles/product.css">
     <link rel="stylesheet" href="./Styles/navbar.css">
     <link rel="stylesheet" href="./Styles/footer.css">
     <link rel="stylesheet" href="./Styles/page.css">
+    <link rel="stylesheet" href="./Styles/cart.css">
     <link rel="stylesheet" href="./Styles/home-app.css">
-    <link rel="stylesheet" href="./Styles/profile.css">
     <title>Gadget-Zone</title>
 </head>
 
 <body>
     <header class="navbar">
         <div class="nav-left">
-            <a class="nav-logo" href="./index.html"><img class="nav-logo-img" src="./Assets/icons/nav logo.jpeg"
+            <a class="nav-logo" href="./index.html"><img class="nav-logo-img" src="./Assets/Logo/logo3.png"
                     alt="GadgetZone"></a>
             <div class="search-container">
                 <input class="search-input nav-search" id="searchbar" type="text" placeholder="Search...🔍">
@@ -25,22 +26,19 @@
             </div>
         </div>
         <div class="nav-right">
-            <button id="bs-lap" class="nav-seller" title="Become Seller"><img class="nav-seller-img"
-                    src="./Assets/icons/becomeSeller.png" alt=""></button>
-            <button id="cart-lap" class="nav-cart"><img class="nav-cart-img" src="./Assets/icons/cart.png" alt=""></button>
-            <button id="prof-lap" onclick="goToProf" class="nav-profile"><img class="nav-profile-img" src="./Assets/icons/user.png"
-                    alt=""></button>
+            <a class="nav-seller" title="Become Seller"><img class="nav-seller-img"
+                    src="./Assets/icons/becomeSeller.png" alt=""></a>
+            <a id="cart-but" class="nav-cart"><img class="nav-cart-img" src="./Assets/icons/cart.png" alt=""></a>
+            <a class="nav-profile"><img class="nav-profile-img" src="./Assets/icons/user.png" alt=""></a>
         </div>
     </header>
     <header class="navbar-mobile">
         <div class="nav-top">
-            <a class="nav-logo" href="./index.html"><img class="nav-logo-img" src="./Assets/icons/nav logo.jpeg"
+            <a class="nav-logo" href="./index.html"><img class="nav-logo-img" src="./Assets/Logo/logo3.png"
                     alt="GadgetZone"></a>
-            <button id="bs-mob" class="nav-seller"><img class="nav-seller-img" src="./Assets/icons/becomeSeller.png"
-                    alt=""></button>
-            <button id="cart-mob" class="nav-cart"><img class="nav-cart-img" src="./Assets/icons/cart.png" alt=""></button>
-            <button id="prof-mob" class="nav-profile"><img class="nav-profile-img" src="./Assets/icons/user.png"
-                    alt=""></button>
+            <a class="nav-seller"><img class="nav-seller-img" src="./Assets/icons/becomeSeller.png" alt=""></a>
+            <a id="c-p-m" class="nav-cart"><img class="nav-cart-img" src="./Assets/icons/cart.png" alt=""></a>
+            <a class="nav-profile"><img class="nav-profile-img" src="./Assets/icons/user.png" alt=""></a>
         </div>
         <div class="search-container">
             <input class="search-input nav-search" id="mob-searchbar" type="text" placeholder="Search...🔍">
@@ -56,7 +54,7 @@
         </div>
         <div id="trending-id" class="trending">
             <button class="trend-but" id="trend-dec"></button>
-            <a href="./product.html" class="trending-products">
+            <a id="t-p" class="trending-products">
                 <div class="trending-product-img">
                     <img id="tpi" src="" alt="">
                 </div>
@@ -78,8 +76,8 @@
             <button class="trend-but" id="trend-inc"></button>
         </div>
         <div class="h-a-section">
-            <h4 class="sec-tit">Home Appliences</h4>
-            <div id="hapro" class="home-appliences">
+            <h4 class="sec-tit">Laptops</h4>
+            <div id="lapro" class="home-appliences">
                 <!-- <div class="section-products">
                     <div class="section-product-img">
                         
@@ -91,8 +89,8 @@
             </div>
         </div>
         <div class="h-a-section">
-            <h4 class="sec-tit">Laptops</h4>
-            <div id="lapro" class="home-appliences">
+            <h4 class="sec-tit">Home Appliences</h4>
+            <div id="hapro" class="home-appliences">
 
             </div>
         </div>
@@ -114,52 +112,51 @@
 
             </div>
         </div>
-    </section>
-
-    <section id="prof-id" class="profile">
-        <div class="profile-page">
-            <div class="profile-page-tabs">
-                <button id="profile-but-js" class="profile-tab-button"><img class="profile-tab-icon" src="./Assets/icons/user.png" alt=""> Profile</button>
-                <a href="./cart.html" id="cart-but-js" class="profile-tab-button"><img class="profile-tab-icon" src="./Assets/icons/cart.png" alt=""> Cart</a>
-                <button id="seller-but-js" class="profile-tab-button"><img class="profile-tab-icon" src="./Assets/icons/becomeSeller.png" alt=""> Sell Product</button>
-            </div>
-            <div class="profile-page-details">
-                <div id="pppi-id-js" class="profile-page-personal-info">
-                    <h1 class="profile-page-personal-info-title">Personal Information</h1>
-                    <div class="pppi">
-                        <p>Name :</p>
-                        <p class="retrive-text-profile" id="show-nm"></p>
-                    </div>
-                    <div class="pppi">
-                        <p>User Name :</p>
-                        <p class="retrive-text-profile" id="show-un"></p>
-                    </div>
-                    <div class="pppi">
-                        <p>Gender :</p>
-                        <p class="retrive-text-profile" id="show-sex"></p>
-                    </div>
-                    <div class="pppi">
-                        <p>Email :</p>
-                        <p class="retrive-text-profile" id="show-ei"></p>
-                    </div>
-                    <div class="pppi">
-                        <p>Mobile No.:</p>
-                        <p class="retrive-text-profile" id="show-mn"></p>
+        <div id="p-p" class="product-pop">
+            <button id="c-b" class="closeBut"></button>
+            <div class="product-page">
+                <div class="product-page-img">
+                    <img src="" alt="" class="pro-img-pro-page">
+                </div>
+                <div class="product-page-details">
+                    <h1 class="product-page-details-title fetch-brand"></h1>
+                    <h2 class="product-page-details-title fetch-tit"></h2>
+                    <p class="product-page-details-spec fetch-spec"></p>
+                    <p class="product-page-details-spec fetch-price"></p>
+                    <div class="product-page-buttons">
+                        <button id="b-n" class="buy-now"><img class="pro-but-logo" src="./Assets/icons/buy.png"
+                                alt="">Buy
+                            Now</button>
+                        <button id="a-c" class="addtoCart"><img class="pro-but-logo" src="./Assets/icons/cart.png"
+                                alt=""> Add to
+                            Cart</button>
                     </div>
                 </div>
-                <!-- <div id="spsi-js" class="profile-page-sell">
-                    <h1 class="profile-page-personal-info-title">Sell Product</h1>
-                </div> -->
             </div>
         </div>
-    
+        <div id="c-p" class="cart-pop">
+            <button id="cc-b" class="close-but"></button>
+            <div class="cart-page">
+                <h5 class="cart-page-title">Cart</h5>
+                <div id="a-c-c" class="cart-container">
+                    <!-- <button class="indi-cart-pro">
+                        <img src="" alt="" class="cart-pro-img">
+                        <div class="cart-pro-det">
+                            <p class="cart-pro-br-name"></p>
+                            <p class="cart-pro-spec"></p>
+                            <p class="cart-pro-price"></p>
+                        </div>
+                        <a class="cart-pro-del"><img src="./Assets/icons/delete.png" alt="" class="cart-pro-del-img">
+                        </a>
+                    </button> -->
+                </div>
+                <div class="cart-page-end">
+                    <h5 id="tot-price" class="cart-page-end">Total =</h5>
+                    <button class="p-o"><img src="./Assets/icons/buy.png" alt="">Place Orders</button>
+                </div>
+            </div>
+        </div>
     </section>
-
-
-
-
-
-
 
     <footer class="footer">
         <p class="about-ci">Contact info :</p>
@@ -173,12 +170,12 @@
         <p class="creator">
             Created by Atharv Mayur Tambekar
         </p>
-        <img class="img-logo" src="./Assets/icons/nav logo.jpeg" alt="">
+        <img class="img-logo" src="./Assets/Logo/logo3.png" alt="">
         <p class="copyright">
-            ©️2024 Atharv Mayur Tambekar
+            ©️2023 Atharv Mayur Tambekar
         </p>
     </footer>
-    <script src="./Scripts/product.js"></script>
+    <script src="./Scripts/main.js"></script>
 </body>
 
 </html>

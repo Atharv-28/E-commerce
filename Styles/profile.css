@@ -1,6 +1,7 @@
-.profile
-{
-    display:none;
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f3f6;
 }
 .profile-tab-button:hover
 {
@@ -79,6 +80,10 @@
         color: rgb(125, 125, 125);
         font-size: 1.1rem;
     }
+}
+.butt-toggle
+{
+    display: none;
 }
 @media screen and (max-width:649px)
 {

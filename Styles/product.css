@@ -1,134 +1,233 @@
-.product-page
-{
-    padding-top: 20vh;
+.product-pop {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 10;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: hidden;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation-name: animatetop;
+    animation-duration: 0.4s
 }
-body{
+
+@keyframes animatetop {
+    from {
+        top: -200px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10vh;
 }
-.buy-now
-{
+
+.fetch-price {
+    font-weight: bold;
+}
+
+#p-p {
+    display: none;
+}
+
+.closeBut {
+    margin-left: 85vw;
+}
+
+.buy-now {
     border: none;
     background-color: #fb641b;
     color: white;
     font-weight: bold;
     display: flex;
     justify-content: center;
-    align-items:center;
-    gap:10px;
+    align-items: center;
+    gap: 10px;
 }
-.addtoCart
-{
+
+.addtoCart {
     border: none;
     background-color: #ff9f00;
     color: white;
     font-weight: bold;
     display: flex;
     justify-content: center;
-    align-items:center;
-    gap:10px;
+    align-items: center;
+    gap: 10px;
 }
-@media screen and (max-width:649px)
-{
-    .product-page
-    {
-        width: 60vw;
+
+.closeBut:hover {
+    box-shadow: 0 0 10px 5px gray;
+}
+
+@media screen and (max-width:649px) {
+    .product-page {
+        width: 80vw;
+        height: 65vh;
         display: flex;
         flex-direction: column;
+        align-self: center;
+        margin-left: 10vw;
         gap: 2vh;
+        background-color: white;
     }
-    .product-page-img
-    {
-        width: 60vw;
+
+    .closeBut {
+        height: 3vh;
+        width: 3vh;
+        border-radius: 50%;
+        border: none;
     }
-    .pro-img-pro-page
-    {
-        width: 100%;
+
+    .product-page-img {
+        margin-left: 5vw;
+        width: 70vw;
+        height: 25vh;
+        margin-top: 1vh;
     }
-    .product-page-details
-    {
+
+    .pro-img-pro-page {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+    .product-page-details {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        margin-left: 5vw;
+        width: 70vw;
     }
-    .product-page-details-title
-    {
-        font-size: 1.1rem;
+
+    .product-page-details-title {
+        font-size: 1.2rem;
+        padding-bottom: 5px;
     }
-    .product-page-details-spec
-    {
-        font-size: 0.8rem;
+
+    .product-page-details-spec {
+        font-size: 0.9rem;
+        padding-bottom: 15px;
     }
-    .product-page-buttons
-    {
+
+    .product-page-buttons {
         display: flex;
         gap: 1vw;
     }
-    .buy-now
-    {
-        width: 32vw;
-        height: 5vh;
+
+    .buy-now {
+        width: 35vw;
+        height: 6vh;
     }
-    .addtoCart
-    {
-        width: 32vw;
-        height: 5vh;
+
+    .addtoCart {
+        width: 35vw;
+        height: 6vh;
     }
-    .pro-but-logo
-    {
+
+    .pro-but-logo {
         height: 4vh;
     }
 }
-@media screen and (min-width:650px)
-{
-    .product-page
-    {
-        width: 60vw;
+
+.closeBut {
+    background: url("../Assets/icons/close.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media screen and (min-width:650px) {
+    .product-page {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70vw;
+        height: 80vh;
+        display: flex;
+        margin-left: 15vw;
         flex-direction: row;
         gap: 2vw;
+        background-color: white;
     }
-    .product-page-img
-    {
+
+    .closeBut {
+        height: 3vw;
+        width: 3vw;
+        border-radius: 20px;
+        border: none;
+    }
+
+    .product-page-img {
+        height: 50vh;
         width: 30vw;
     }
-    .pro-img-pro-page
-    {
-        width: 100%;
+
+    .pro-img-pro-page {
+        max-width: 80%;
+        max-height: 100%;
     }
-    .product-page-details
-    {
+
+    .product-page-details {
+        height: 50vh;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
-    .product-page-details-title
-    {
+
+    .product-page-details-title {
         font-size: 1.5rem;
+        margin-bottom: 10px;
     }
-    .product-page-details-spec
-    {
+
+    .product-page-details-spec {
+        display: flex;
+        flex-wrap: wrap;
+        width: 20vw;
         font-size: 1.1rem;
+        margin-top: 15px;
+        margin-bottom: 10px;
     }
-    .product-page-buttons
-    {
+
+    .product-page-buttons {
+        margin-top: 5vh;
         display: flex;
         gap: 1vw;
     }
-    .buy-now
-    {
+
+    .buy-now {
         width: 12vw;
         height: 5vh;
     }
-    .addtoCart
-    {
+
+    .addtoCart {
         width: 12vw;
         height: 5vh;
     }
-    .pro-but-logo
-    {
+
+    .pro-but-logo {
         height: 4vh;
     }
 }
