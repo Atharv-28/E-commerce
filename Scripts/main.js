@@ -157,12 +157,12 @@ myProduct1.push(new Product(img18, "M4 5g", "Poco", "Mobiles", spec18, "₹12,00
 var img19 = new Image();
 img19.src = "Assets/product-imgs/samsung-s23ultra.png";
 var spec19 = ["Processor- Snapdragon 8 Gen 2 ", " Ram- 12GB ", " Storage- 256GB ", " Battery- 5000mAh "];
-myProduct1.push(new Product(img19, "S23 Ultra", "Samsung", "Mobiles", spec19, "₹1,25,000"));
+myProduct1.push(new Product(img19, "S24 Ultra", "Samsung", "Mobiles", spec19, "₹1,25,000"));
 
 var img20 = new Image();
 img20.src = "Assets/product-imgs/apple-14pro.png";
 var spec20 = ["Processor- A16 ", " Ram- 6GB ", " Storage- 128GB ", " Battery- 3000mAh "];
-myProduct1.push(new Product(img20, "iPhone 14 Pro", "Apple", "Mobiles", spec20, "₹1,20,000"));
+myProduct1.push(new Product(img20, "iPhone 15 Pro", "Apple", "Mobiles", spec20, "₹1,20,000"));
 
 var img21 = new Image();
 img21.src = "Assets/product-imgs/realme-c55.png";
