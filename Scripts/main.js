@@ -353,9 +353,6 @@ function displayResultsMob(results) {
 }
 
 
-
-
-
 // type Variables
 var typeHA = 0;
 var typeLap = 0;
