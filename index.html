@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./Assets/icon/favicon.jpeg">
+    <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="stylesheet" href="./Styles/navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
+    <link rel="stylesheet" href="./Styles/page.css">
+    <link rel="stylesheet" href="./Styles/home-app.css">
+    <link rel="stylesheet" href="./Styles/profile.css">
+    <title>Gadget-Zone</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-left">
+            <a class="nav-logo" href="./index.html"><img class="nav-logo-img" src="./Assets/icons/nav logo.jpeg"
+                    alt="GadgetZone"></a>
+            <div class="search-container">
+                <input class="search-input nav-search" id="searchbar" type="text" placeholder="Search...🔍">
+                <button id="search-but" class="search-button">Search</button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <button id="bs-lap" class="nav-seller" title="Become Seller"><img class="nav-seller-img"
+                    src="./Assets/icons/becomeSeller.png" alt=""></button>
+            <button id="cart-lap" class="nav-cart"><img class="nav-cart-img" src="./Assets/icons/cart.png" alt=""></button>
+            <button id="prof-lap" onclick="goToProf" class="nav-profile"><img class="nav-profile-img" src="./Assets/icons/user.png"
+                    alt=""></button>
+        </div>
+    </header>
+    <header class="navbar-mobile">
+        <div class="nav-top">
+            <a class="nav-logo" href="./index.html"><img class="nav-logo-img" src="./Assets/icons/nav logo.jpeg"
+                    alt="GadgetZone"></a>
+            <button id="bs-mob" class="nav-seller"><img class="nav-seller-img" src="./Assets/icons/becomeSeller.png"
+                    alt=""></button>
+            <button id="cart-mob" class="nav-cart"><img class="nav-cart-img" src="./Assets/icons/cart.png" alt=""></button>
+            <button id="prof-mob" class="nav-profile"><img class="nav-profile-img" src="./Assets/icons/user.png"
+                    alt=""></button>
+        </div>
+        <div class="search-container">
+            <input class="search-input nav-search" id="mob-searchbar" type="text" placeholder="Search...🔍">
+            <button id="mob-search-but" class="search-button">Search</button>
+        </div>
+    </header>
+    <section id="page-id" class="page">
+        <div id="res-section" class="h-a-section">
+            <h4 class="sec-tit">Search Results...</h4>
+            <div id="results" class="home-appliences">
+
+            </div>
+        </div>
+        <div id="trending-id" class="trending">
+            <button class="trend-but" id="trend-dec"></button>
+            <a href="./product.html" class="trending-products">
+                <div class="trending-product-img">
+                    <img id="tpi" src="" alt="">
+                </div>
+                <div class="trending-product-details">
+                    <p id="tpd-bn">
+
+                    </p>
+                    <p id="tpd-name">
+
+                    </p>
+                    <p id="tpd-spec">
+
+                    </p>
+                    <p id="tpd-price">
+
+                    </p>
+                </div>
+            </a>
+            <button class="trend-but" id="trend-inc"></button>
+        </div>
+        <div class="h-a-section">
+            <h4 class="sec-tit">Home Appliences</h4>
+            <div id="hapro" class="home-appliences">
+                <!-- <div class="section-products">
+                    <div class="section-product-img">
+                        
+                    </div>
+                    <div class="section-product-details">
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <div class="h-a-section">
+            <h4 class="sec-tit">Laptops</h4>
+            <div id="lapro" class="home-appliences">
+
+            </div>
+        </div>
+        <div class="h-a-section">
+            <h4 class="sec-tit">Mobiles</h4>
+            <div id="mobpro" class="home-appliences">
+
+            </div>
+        </div>
+        <div class="h-a-section">
+            <h4 class="sec-tit">Computer Components</h4>
+            <div id="cocopro" class="home-appliences">
+
+            </div>
+        </div>
+        <div class="h-a-section">
+            <h4 class="sec-tit">Accessories</h4>
+            <div id="accpro" class="home-appliences">
+
+            </div>
+        </div>
+    </section>
+
+    <section id="prof-id" class="profile">
+        <div class="profile-page">
+            <div class="profile-page-tabs">
+                <button id="profile-but-js" class="profile-tab-button"><img class="profile-tab-icon" src="./Assets/icons/user.png" alt=""> Profile</button>
+                <a href="./cart.html" id="cart-but-js" class="profile-tab-button"><img class="profile-tab-icon" src="./Assets/icons/cart.png" alt=""> Cart</a>
+                <button id="seller-but-js" class="profile-tab-button"><img class="profile-tab-icon" src="./Assets/icons/becomeSeller.png" alt=""> Sell Product</button>
+            </div>
+            <div class="profile-page-details">
+                <div id="pppi-id-js" class="profile-page-personal-info">
+                    <h1 class="profile-page-personal-info-title">Personal Information</h1>
+                    <div class="pppi">
+                        <p>Name :</p>
+                        <p class="retrive-text-profile" id="show-nm"></p>
+                    </div>
+                    <div class="pppi">
+                        <p>User Name :</p>
+                        <p class="retrive-text-profile" id="show-un"></p>
+                    </div>
+                    <div class="pppi">
+                        <p>Gender :</p>
+                        <p class="retrive-text-profile" id="show-sex"></p>
+                    </div>
+                    <div class="pppi">
+                        <p>Email :</p>
+                        <p class="retrive-text-profile" id="show-ei"></p>
+                    </div>
+                    <div class="pppi">
+                        <p>Mobile No.:</p>
+                        <p class="retrive-text-profile" id="show-mn"></p>
+                    </div>
+                </div>
+                <!-- <div id="spsi-js" class="profile-page-sell">
+                    <h1 class="profile-page-personal-info-title">Sell Product</h1>
+                </div> -->
+            </div>
+        </div>
+    
+    </section>
+
+
+
+
+
+
+
+    <footer class="footer">
+        <p class="about-ci">Contact info :</p>
+        <div class="links">
+            <a target="_blank" href="https://www.linkedin.com/in/atharv-tambekar-a4a07a213/" class="icon linkedin"></a>
+            <a href="mailto:atharvtambekar28@gmail.com" class="gm icon"></a>
+            <a href="mailto:atharvmt@outlook.com" class="om icon"></a>
+            <a target="_blank" href="https://twitter.com/AtharvMayur" class="icon twitter"></a>
+            <a target="_blank" href="https://www.instagram.com/atharv._.2005/" class="icon instagram"></a>
+        </div>
+        <p class="creator">
+            Created by Atharv Mayur Tambekar
+        </p>
+        <img class="img-logo" src="./Assets/icons/nav logo.jpeg" alt="">
+        <p class="copyright">
+            ©️2024 Atharv Mayur Tambekar
+        </p>
+    </footer>
+    <script src="./Scripts/product.js"></script>
+</body>
+
+</html>

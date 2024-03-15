@@ -1,0 +1,134 @@
+.product-page
+{
+    padding-top: 20vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10vh;
+}
+.buy-now
+{
+    border: none;
+    background-color: #fb641b;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+}
+.addtoCart
+{
+    border: none;
+    background-color: #ff9f00;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap:10px;
+}
+@media screen and (max-width:649px)
+{
+    .product-page
+    {
+        width: 60vw;
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .product-page-img
+    {
+        width: 60vw;
+    }
+    .pro-img-pro-page
+    {
+        width: 100%;
+    }
+    .product-page-details
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product-page-details-title
+    {
+        font-size: 1.1rem;
+    }
+    .product-page-details-spec
+    {
+        font-size: 0.8rem;
+    }
+    .product-page-buttons
+    {
+        display: flex;
+        gap: 1vw;
+    }
+    .buy-now
+    {
+        width: 32vw;
+        height: 5vh;
+    }
+    .addtoCart
+    {
+        width: 32vw;
+        height: 5vh;
+    }
+    .pro-but-logo
+    {
+        height: 4vh;
+    }
+}
+@media screen and (min-width:650px)
+{
+    .product-page
+    {
+        width: 60vw;
+        display: flex;
+        flex-direction: row;
+        gap: 2vw;
+    }
+    .product-page-img
+    {
+        width: 30vw;
+    }
+    .pro-img-pro-page
+    {
+        width: 100%;
+    }
+    .product-page-details
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .product-page-details-title
+    {
+        font-size: 1.5rem;
+    }
+    .product-page-details-spec
+    {
+        font-size: 1.1rem;
+    }
+    .product-page-buttons
+    {
+        display: flex;
+        gap: 1vw;
+    }
+    .buy-now
+    {
+        width: 12vw;
+        height: 5vh;
+    }
+    .addtoCart
+    {
+        width: 12vw;
+        height: 5vh;
+    }
+    .pro-but-logo
+    {
+        height: 4vh;
+    }
+}
