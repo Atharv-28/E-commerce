@@ -649,30 +649,3 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
 })
-
-
-
-
-
-// // tab working
-// var tab1 = document.getElementById("profile-but-js");
-// var tab3 = document.getElementById("seller-but-js");
-// var tab1Working = document.querySelector("#pppi-id-js");
-// var tab3Working = document.querySelector("#spsi-js");
-// tab1.addEventListener("click",function(){
-//     tab1Working.style.display = "block"
-//     tab3Working.style.display = "none"
-// });
-// tab3.addEventListener("click",function(){
-//     console.log("hi")
-//     // tab1Working.style.display = "none"
-//     // tab3Working.style.display = "block"
-//     // alert("hi")
-// });
-
-
-// function hi(){
-//     tab1Working.style.display = "none"
-//     tab3Working.style.display = "block"
-//     alert("hi")
-// }
